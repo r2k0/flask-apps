@@ -14,5 +14,16 @@ with sqlite3.connect("new.db") as connection:
 		('Phoenix','AZ',150000)
 	]
 
-#insert data into table
+# insert data into table
 c.executemany('INSERT INTO population VALUES(?,?,?)',cities)
+
+# notes regarding placeholders: (?)
+# (?), parameterized statements, act as placeholders
+# for the tuple instead of string substitution (%s)
+# string substitution exposes risk for potential 
+# SQL injections that could occur from using string
+# substitutions. For example: a user supplies a value
+# looks like SQL code but really causes the SQL statement
+# to behave in unexpected ways either accidental or malicious
+# intent
+
