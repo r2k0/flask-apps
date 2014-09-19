@@ -37,8 +37,18 @@ def path_type(value):
 	print value
 	return "correct"
 
+# Response Object - response, status, headers
+# if not explicitly define these, Flask will automatically assign 
+# a Status Code of 200 and a header where the Content-Type: "text/html"
+#
+
+@app.route("/name/<name>")
+def index(name):
+	return "Hello, {}".format(name), 200
+
 def test():
 	return "testing Flask!"
 
+# run() start the development server
 if __name__ == "__main__":
 	app.run()
