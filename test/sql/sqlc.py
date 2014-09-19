@@ -15,8 +15,6 @@ with sqlite3.connect("new.db") as connection:
 	]
 
 # insert data into table
-c.executemany('INSERT INTO population VALUES(?,?,?)',cities)
-
 # notes regarding placeholders: (?)
 # (?), parameterized statements, act as placeholders
 # for the tuple instead of string substitution (%s)
@@ -26,4 +24,7 @@ c.executemany('INSERT INTO population VALUES(?,?,?)',cities)
 # looks like SQL code but really causes the SQL statement
 # to behave in unexpected ways either accidental or malicious
 # intent
+
+	c.executemany('INSERT INTO population VALUES(?, ?, ?)',cities)
+
 

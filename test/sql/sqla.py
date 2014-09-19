@@ -16,5 +16,5 @@ cursor = conn.cursor()
 
 # create table
 cursor.execute("""CREATE TABLE population
-					(city TEXT, state TEXT, pupulation INT)""")
+					(city TEXT, state TEXT, population INT)""")
 conn.close()
