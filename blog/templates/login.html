@@ -2,5 +2,11 @@
 {% block content %}
 	<h2>Welcome to the Flask!</h2>
 	<h3>Please login</h3>
-	<p>Temp login: <a href="/main">Login</a></p>
+		<form action="" method="post">
+			Username: <input type="text" name="username" 
+				value="{{request.form.username}}">
+			Password: <input type="password" name="password"
+				value="{{request.form.password}}">
+			<p><input type="submit" value="Login"></p>
+		</form>
 {% endblock %}
