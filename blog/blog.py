@@ -1,5 +1,5 @@
 # blog.py - controller
-
+from functools import wraps
 from flask import Flask, render_template, request, session, \
 	flash, redirect, url_for, g
 import sqlite3
@@ -19,6 +19,17 @@ app.config.from_object(__name__)
 def connect_db():
     """ db connection """
     return sqlite3.connect(app.config['DATABASE'])
+
+
+def login_required(test):
+    @wraps(test)
+    def wrap(*args, **kwargs):
+        if 'logged_in' in session:
+            return test(*args, **kwargs)
+        else:
+            flash('You need to login first.')
+            return redirect(url_for('login'))
+    return wrap
 
 @app.route('/', methods=['GET','POST'])
 def login():
@@ -41,6 +52,7 @@ def logout():
     return redirect(url_for('login'))
 
 @app.route('/main')
+@login_required
 def main():
     # render_template(), Flask immediately recognizes
     # that login.html extends template.html, then fills 
