@@ -13,15 +13,19 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 def connect_db():
-""" db connection """
-	return sqlite3.connect(app.config['DATABASE'])
+    """ db connection """
+    return sqlite3.connect(app.config['DATABASE'])
 
 @app.route('/')
 def login():
+    """ renders login page """
     return render_template('login.html')
 
 @app.route('/main')
 def main():
+    # render_template(), Flask immediately recognizes
+    # that login.html extends template.html, then fills 
+    # int the block tags with the code found in login.html
     return render_template('main.html')
 
 if __name__ == '__main__':
