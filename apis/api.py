@@ -13,7 +13,7 @@ class ResourceSimple(Resource):
 	def put(self, resource_id):
 		resources[resource_id] = request.form['data']
 		return {resource_id: resources[resource_id]}
-
+        
 api.add_resource(ResourceSimple, '/<string:resource_id>')
 
 if __name__ == '__main__':
