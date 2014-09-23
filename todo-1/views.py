@@ -36,10 +36,9 @@ def logout():
 def login():
     if request.method == 'POST':
         if request.form['username'] != app.config['USERNAME'] \
-                or request.form['password'] != 
-                    app.config['PASSWORD']:
-            error = 'Invalid Credentials. Please try again.'
-            return render_template('login.html', error=error)
+                or request.form['password'] != app.config['PASSWORD']:
+                    error = 'Invalid Credentials. Please try again.'
+                    return render_template('login.html', error=error)
         else:
             session['logged_in'] = True
             return redirect(url_for('tasks'))
