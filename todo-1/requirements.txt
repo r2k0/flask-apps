@@ -22,6 +22,7 @@ cssselect==0.9.1
 docutils==0.12
 facebook-sdk==0.4.0
 finsymbols==0.3.5
+gunicorn==19.1.1
 html==1.16
 httplib2==0.9
 ipython==2.1.0
