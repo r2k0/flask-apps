@@ -8,6 +8,7 @@ def get_etfs(file):
     file = open(file,'wb')
     for l in rawdata:
         file.write(l)
+        print l
     file.close()
 
 def main():

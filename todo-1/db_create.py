@@ -17,9 +17,9 @@ with sqlite3.connect(DATABASE_PATH) as connection:
     # insert dummy data into the table
     c.execute(
         'INSERT INTO tasks (name, due_date, priority, status)'
-        'VALUES("Finish this tutorial", "02/03/2014", 10, 1)'
+        'VALUES("Publish this to Heroku", "09/24/2014", 10, 1)'
     )
     c.execute(
         'INSERT INTO tasks (name, due_date, priority, status)'
-        'VALUES("Finish Real Python Course 2", "02/03/2014", 10, 1)'
+        'VALUES("expose RESTful api", "09/25/2014", 10, 1)'
     )
