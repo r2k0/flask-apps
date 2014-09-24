@@ -12,3 +12,23 @@ from flask import Flask, request, session, g, redirect, \
 url = "http://www.finviz.com/export.ashx?v=111&f=geo_usa,ind_exchangetradedfund,sh_curvol_o5000&o=-volume"
 stockdata = urllib.urlopen(url).readlines()
 print stockdata
+
+@app.route('/finviz',methods=['GET'])
+def get_finviz_data():
+    scrap = "Finviz Data"
+#    return render_template('finviz.html',columns=stockdata,scrap=scrap,tickerlist=get_series_data(),pricelist=get_series_value()
+
+def get_series_data():
+    tlist = []
+    for r in stockdata[1:]:
+        tlist.append(r.split(",")[1])
+    return tlist
+
+def get_series_value():
+    zlist = []
+    for r in stockdata[1:]:
+        try:
+            zlist.append(float(r.split(",")[8]))
+        except:
+            print ""
+    return zlist
