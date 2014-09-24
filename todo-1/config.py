@@ -1,19 +1,16 @@
-# application's config
+# config.py
+
 
 import os
+
 # grabs the folder where the script runs
 basedir = os.path.abspath(os.path.dirname(__file__))
 
-DATABASE = 'todo.db'
+DATABASE = 'flasktaskr.db'
 USERNAME = 'admin'
 PASSWORD = 'admin'
+CSRF_ENABLED = True
+SECRET_KEY = 'my_precious'
 
-# WTF_CSRF_ENABLED config setting is used for 
-# cross-site request forgery prevention
-# the SECRET_KEY config setting is used in conjunction
-# with the WTF_CSRF_ENABLED setting in order to create
-# a cryptographic token that is used to validate a form.
-WTF_CSRF_ENABLED = True
-SECRET_KEY = 'SECRET_KEY'
-
+# defines the full path for the database
 DATABASE_PATH = os.path.join(basedir, DATABASE)
