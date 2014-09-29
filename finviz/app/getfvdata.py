@@ -7,8 +7,9 @@ def get_etfs(file):
     rawdata = urllib2.urlopen(url).readlines()
     file = open(file,'wb')
     for l in rawdata:
-        file.write(l)
+        l= l.replace("\"","")
         print l
+        file.write(l)
     file.close()
 
 def main():

@@ -1,0 +1,45 @@
+No.,Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price,Change,Volume
+1,SPY,SPDR S&P 500 ETF,Financial,Exchange Traded Fund,USA,,,197.54,-0.18%,93793192
+2,EEM,iShares MSCI Emerging Markets,Financial,Exchange Traded Fund,USA,,,41.56,-2.03%,71515600
+3,EWZ,iShares MSCI Brazil Capped,Financial,Exchange Traded Fund,USA,,,43.72,-5.96%,50558256
+4,VXX,iPath S&P 500 VIX ST Futures ETN,Financial,Exchange Traded Fund,USA,,,30.81,4.90%,45576692
+5,XLF,Financial Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,23.21,-0.34%,37747340
+6,QQQ,PowerShares QQQ,Financial,Exchange Traded Fund,USA,,,98.65,-0.13%,32465460
+7,EWJ,iShares MSCI Japan,Financial,Exchange Traded Fund,USA,,,11.84,-0.59%,32408150
+8,IWM,iShares Russell 2000,Financial,Exchange Traded Fund,USA,,,111.03,-0.08%,29429572
+9,TVIX,VelocityShares Daily 2x VIX ST ETN,Financial,Exchange Traded Fund,USA,,,3.17,8.56%,26065566
+10,FXI,iShares China Large-Cap,Financial,Exchange Traded Fund,USA,,,38.27,-2.35%,23500160
+11,GDX,Market Vectors Gold Miners ETF,Financial,Exchange Traded Fund,USA,,,21.75,-1.05%,21454764
+12,IYE,iShares US Energy,Financial,Exchange Traded Fund,USA,,,52.20,-0.23%,18798248
+13,XIV,VelocityShares Daily Inverse VIX ST ETN,Financial,Exchange Traded Fund,USA,,,38.79,-4.76%,18033668
+14,EFA,iShares MSCI EAFE,Financial,Exchange Traded Fund,USA,,,64.17,-0.93%,17151260
+15,TZA,Direxion Daily Small Cap Bear 3X ETF,Financial,Exchange Traded Fund,USA,,,16.19,0.25%,15810116
+16,XLE,Energy Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,91.77,-0.23%,15402555
+17,DGAZ,VelocityShares 3x Inv Natural Gas ETN,Financial,Exchange Traded Fund,USA,,,3.66,-6.63%,13755337
+18,FXN,First Trust Energy AlphaDEX ETF,Financial,Exchange Traded Fund,USA,,,26.28,-0.23%,11441550
+19,UVXY,ProShares Ultra VIX Short-Term Futures,Financial,Exchange Traded Fund,USA,,,28.94,9.95%,11395170
+20,XLP,Consumer Staples Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,45.09,-0.02%,11255492
+21,UNG,United States Natural Gas ETF,Financial,Exchange Traded Fund,USA,,,22.08,2.32%,10598138
+22,XLV,Health Care Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,64.26,-0.22%,10281675
+23,VWO,Vanguard FTSE Emerging Markets ETF,Financial,Exchange Traded Fund,USA,,,41.62,-2.14%,9813520
+24,BND,Vanguard Total Bond Market ETF,Financial,Exchange Traded Fund,USA,,,81.95,0.12%,9772629
+25,UGAZ,VelocityShares 3x Long Natural Gas ETN,Financial,Exchange Traded Fund,USA,,,16.06,6.50%,9608394
+26,IYR,iShares US Real Estate,Financial,Exchange Traded Fund,USA,,,69.62,-0.03%,9451022
+27,TNA,Direxion Daily Small Cap Bull 3X ETF,Financial,Exchange Traded Fund,USA,,,66.47,-0.17%,9442438
+28,EWT,iShares MSCI Taiwan,Financial,Exchange Traded Fund,USA,,,15.22,-0.98%,9316413
+29,XLB,Materials Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,50.19,-0.42%,9104047
+30,JNK,SPDR Barclays High Yield Bond ETF,Financial,Exchange Traded Fund,USA,,,39.98,-0.27%,9092084
+31,RSX,Market Vectors Russia ETF,Financial,Exchange Traded Fund,USA,,,22.62,-3.04%,8833658
+32,BKLN,PowerShares Senior Loan ETF,Financial,Exchange Traded Fund,USA,,,24.27,0.00%,8583375
+33,SDS,ProShares UltraShort S&P500,Financial,Exchange Traded Fund,USA,,,24.55,0.41%,8400642
+34,XOP,SPDR S&P Oil & Gas Explor & Prodtn ETF,Financial,Exchange Traded Fund,USA,,,71.10,1.14%,7252712
+35,AGG,iShares Core US Aggregate Bond,Financial,Exchange Traded Fund,USA,,,109.18,0.11%,7243748
+36,XLI,Industrial Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,53.23,-0.15%,7155765
+37,XLY,Consumer Discret Sel Sect SPDR ETF,Financial,Exchange Traded Fund,USA,,,67.06,-0.52%,6840585
+38,TLT,iShares 20+ Year Treasury Bond,Financial,Exchange Traded Fund,USA,,,116.93,0.80%,6421801
+39,HYG,iShares iBoxx $ High Yield Corporate Bd,Financial,Exchange Traded Fund,USA,,,91.36,-0.21%,6288551
+40,EZU,iShares MSCI EMU,Financial,Exchange Traded Fund,USA,,,38.48,-1.16%,5809216
+41,XLU,Utilities Select Sector SPDR ETF,Financial,Exchange Traded Fund,USA,,,42.03,0.65%,5571024
+42,EWU,iShares MSCI United Kingdom,Financial,Exchange Traded Fund,USA,,,19.55,-0.36%,5319149
+43,DIA,SPDR Dow Jones Industrial Average ETF,Financial,Exchange Traded Fund,USA,,,170.33,-0.22%,5166647
+44,OIH,Market Vectors Oil Services ETF,Financial,Exchange Traded Fund,USA,,,50.29,-0.67%,5131324
