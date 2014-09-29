@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -13,7 +13,8 @@ def home():
         value_one = int(request.form['number-one'])
         value_two = int(request.form['number-two'])
         total = value_one + value_two
-        return render_template('index.html',string="TESTING!", value=total)
+        data = {"total": str(total)}
+        return jsonify(data)
     return render_template('index.html',string="TESTING!")
 
 if __name__ == '__main__':
