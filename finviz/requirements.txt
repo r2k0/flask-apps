@@ -2,6 +2,8 @@ Django==1.5.4
 Flask==0.10.1
 Flask-RESTful==0.2.12
 Flask-WTF==0.9.4
+Jinja2==2.7.3
+MarkupSafe==0.23
 Pillow==2.5.3
 QSTK==0.2.8
 Quandl==2.0
