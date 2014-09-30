@@ -1,3 +1,11 @@
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+# required by the Flask-SQLAlchemy extension
+SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir,'app.db')
+# to store SQLAlchemy-migrate data files
+SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
+
 WTF_CSRF_ENABLED = True
 SECRET_KEY = 'its-a-secret'
 
