@@ -9,7 +9,6 @@ app.config.from_object('config')
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
-
 @app.route('/')
 def beta():
     return render_template('index.html')
