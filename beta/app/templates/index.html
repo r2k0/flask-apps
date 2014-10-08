@@ -2,7 +2,12 @@
 {% block content %}
 <h1> Welcome to Beta. </h1>
 <body>
-blah blah blah lllllllllllsdfjsaf;ljsdlkfjsljflskj
+	{% with %}
+	    {% set location=(16.8071383,96.1704539) %}
+		{% set style="width:800px;height:725px;" %}
+		{{ googlemap("test-map", location.0, location.1,style=style) }}
+		{% endwith %}
+
 </body>
 {% endblock %}
 
