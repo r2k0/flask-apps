@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="properties">
+	<h2>Properties:</h2>
+	<div class="datagrid">
+		<table>
+			<thead>
+				<th width="400px"><strong>Address</strong></th>
+				<th width="50px"><strong>Bedrooms</strong></th>
+				<th width="50px"><strong>Bathrooms</strong></th>
+			</thead>
+			{% for p in properties %}
+				<tr>
+					<td width="400px">{{ p.address }}</td>
+					<td width="50px">{{ p.bed_rooms }}</td>
+					<td width="50px">{{ p.bath_rooms }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+</div>
+{% endblock %}
