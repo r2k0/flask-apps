@@ -2,10 +2,25 @@
 <html>
   <head>
     <title>Welcome to BETA!!</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" 
+		media="screen">
   </head>
   <body>
-    <div class="page">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="href="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	<div class="page">
+		<div class="navbar">
+		<ul class="nav">
+		<li class="active">
+			<a href="/">Home</a>
+		</li>
+		<li>
+			<a href="/forsale/">ForSale</a>
+		</li>
+		</ul>
+	</div>
+
       {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
       {% endfor %}
