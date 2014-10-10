@@ -14,7 +14,7 @@ def connect_db():
 def beta():
     return render_template('index.html')
 
-@app.route('/forsale/')
+@app.route('/properties/')
 def properties():
     g.db = connect_db()
     cur = g.db.execute( 'select address, bed_rooms, \
@@ -23,6 +23,19 @@ def properties():
             bath_rooms=row[2], posted_date=row[3]) for row in cur.fetchall()]
     g.db.close()
     return render_template(
-            'forsale.html',
+            'properties.html',
+            properties=properties
+            )
+
+@app.route('/rentals/')
+def rentals():
+    g.db = connect_db()
+    cur = g.db.execute( 'select address, bed_rooms, \
+            bath_rooms, posted_date from properties' )
+    properties = [dict(address=row[0], bed_rooms=row[1], \
+            bath_rooms=row[2], posted_date=row[3]) for row in cur.fetchall()]
+    g.db.close()
+    return render_template(
+            'rentals.html',
             properties=properties
             )
