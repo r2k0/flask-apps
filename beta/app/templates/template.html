@@ -3,23 +3,28 @@
   <head>
     <title>Welcome to BETA!!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" 
-		media="screen">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"></link>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}"></link>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery.js"></script>
   </head>
   <body>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="href="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-	<div class="page">
-		<div class="navbar">
-		<ul class="nav">
-		<li class="active">
-			<a href="/">Home</a>
-		</li>
-		<li>
-			<a href="/forsale/">ForSale</a>
-		</li>
-		</ul>
-	</div>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/forsale/">ForSale</a>
+					</li>
+					<li>
+						<a href="/forrent/">ForRent</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
 
       {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
