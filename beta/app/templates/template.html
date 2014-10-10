@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Welcome to BETA!!</title>
+<head>
+	<title>Welcome to BETA!!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"></link>
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}"></link>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="http://code.jquery.com/jquery.js"></script>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src={{ url_for('static', filename='js/main.js') }}></script>
+
   </head>
   <body>
 		<div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -24,7 +25,7 @@
 				</ul>
 			</div>
 		</div>
-
+	  <div class="container theme-showcase" role="main">
       {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
       {% endfor %}
@@ -34,7 +35,7 @@
 
       {% block content %}
       {% endblock %}
-
+	  </div>
     </div>
   </body>
 </html>

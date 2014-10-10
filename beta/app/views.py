@@ -1,5 +1,5 @@
 from flask import Flask, flash, redirect, render_template,\
-        request, session, url_for, g
+        request, session, url_for, g, jsonify
 from functools import wraps
 import sqlite3
 
@@ -9,6 +9,8 @@ app.config.from_object('config')
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
+
+
 
 @app.route('/')
 def beta():
