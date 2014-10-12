@@ -9,6 +9,7 @@
   </head>
   <body style="width:100%;height:100%;">
 		<div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
 				<ul class="nav navbar-nav">
 					<li class="active">
 						<a href="/">Home</a>
@@ -20,15 +21,18 @@
 						<a href="/rentals/">For Rent</a>
 					</li>
 				</ul>
+			 </div>
 		</div>
-      {% for message in get_flashed_messages() %}
+      
+      {% block content %}
+      {% endblock %}
+	  
+	  {% for message in get_flashed_messages() %}
         <div class="flash">{{ message }}</div>
       {% endfor %}
       {% if error %}
         <div class="error"><strong>Error:</strong> {{ error }}</div>
       {% endif %}
 
-      {% block content %}
-      {% endblock %}
   </body>
 </html>

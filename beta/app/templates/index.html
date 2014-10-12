@@ -11,18 +11,22 @@
 			el: '#map',
 			lat: 16.8657124,
 			lng: 96.1571502,
-			zoom: 12,
+			zoom: 13,
 			zoomControl : true,
 			});
+		map.addMarker({
+			lat: 16.8657124,
+			lng: 96.1572000,
+			infoWindow: {
+				content: '<p>$1,500,000<br>5bd/4ba</p>'
+			}
 		});
-	</script>
+	    });
+
+	 </script>
 </head>
 
-<body style="width:100%;height:100%;">
-	
-	<div id="map" class="map" style="height:100%;width:100%;">
-			</div>
-</body>
+	<div id="map" style="height:100%;width:100%;" />
 
 {% endblock %}
 
