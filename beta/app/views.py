@@ -58,16 +58,17 @@ def logout():
     flash('Logged Out: ')
     return redirect(url_for('login'))
 
-@app.route('/login/',methods=['GET','POST']
+
+@app.route('/login/',methods=['GET','POST'])
 def login():
-    if requested.method == 'POST':
+    if request.method == 'POST':
         if request.form['username'] != app.config['USERNAME'] \
                 or request.form['password'] != app.config['PASSWORD']:
             error = 'Invalid Credentials.'
-            return render_template('login.html',error=error)
+            return render_template('login.html')
     else:
         session['logged_in'] = True
-        return redirect(url_for('tasks'))
+        return render_template('login.html')
     if request.method == 'GET':
         return render_template('login.html')
 
