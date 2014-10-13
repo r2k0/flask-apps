@@ -41,3 +41,13 @@ def rentals():
             'rentals.html',
             properties=properties
             )
+
+def login_required(test):
+    @wrap(test)
+    def wrap(*args, **kwargs):
+        if 'logged_in' in session:
+            return test(*args, **kwargs)
+        else:
+            flash('You need to login first.')
+            return redirect(url_for('login'))
+        return wrap
