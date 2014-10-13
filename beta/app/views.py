@@ -51,3 +51,27 @@ def login_required(test):
             flash('You need to login first.')
             return redirect(url_for('login'))
         return wrap
+
+@app.route('/logout/')
+def logout():
+    session.pop('logged_in', None)
+    flash('Logged Out: ')
+    return redirect(url_for('login'))
+
+@app.route('/login/',methods=['GET','POST']
+def login():
+    if requested.method == 'POST':
+        if request.form['username'] != app.config['USERNAME'] \
+                or request.form['password'] != app.config['PASSWORD']:
+            error = 'Invalid Credentials.'
+            return render_template('login.html',error=error)
+    else:
+        session['logged_in'] = True
+        return redirect(url_for('tasks'))
+    if request.method == 'GET':
+        return render_template('login.html')
+
+
+
+
+
