@@ -1,11 +1,13 @@
 {% extends "template.html" %}
 {% block content %}
+<div class="container">
 <h2> Please login. </h2>
 <form method="post" action="/login/">
 	Username: <input type="text" name="username"
-		value="{{request.form.username}}">
+	value="{{request.form.username}}"> <br><br>
 	Password: <input type="password" name="password"
 		value="{{request.form.password}}">
 	<input type="submit" value="Login">
 </form>
+</div>
 {% endblock %}
