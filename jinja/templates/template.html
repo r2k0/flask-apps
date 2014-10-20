@@ -1,8 +1,6 @@
-
-
 {% extends "layout.html" %}
-
-{% block page %}Home{% endblock %}
+{% block title %}{{title}}{% endblock %}
+{% block page %}{{title}}{% endblock %}
 {% block heading %}
   {{ super() }}
 {% endblock %}
@@ -18,4 +16,7 @@
 	{% endfor %}
 	</ul>
 	<h3> This is the end of my child template</h3>
+	{% block footer %}
+	{{super()}}
+	{% endblock %}
 {% endblock %}

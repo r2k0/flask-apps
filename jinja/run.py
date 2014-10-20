@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def template_test():
     return render_template('template.html',my_string="Jinja exercise:",\
-            my_list=[0,1,2,3,4,5,6,7,8])
+            my_list=[0,1,2,3,4,5,6,7,8],title="Home")
 
 if __name__ == '__main__':
     app.run(debug=True)
